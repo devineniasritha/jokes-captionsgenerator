@@ -1,0 +1,141 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Keep buttons at the top with spacing */
+.sidebar button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ecf0f1;
+    border: none;
+    padding: 14px;
+    margin-top: 15px; /* Space from the top */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Hover Effect */
+.sidebar button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Icons */
+.sidebar button::before {
+    content: '📜';  /* Default icon */
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+#nav-jokes::before {
+    content: '';
+}
+
+#nav-captions::before {
+    content: '';
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 240px;
+    padding: 50px 40px;
+    width: calc(100% - 240px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Section Headers */
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Section Descriptions */
+.section-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Content Display */
+.display-text {
+    font-size: 20px;
+    color: #444;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.display-text:hover {
+    transform: translateY(-5px);
+}
+
+/* Categories */
+/* Add spacing between categories and the displayed joke/caption */
+.categories {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Added gap between categories and joke/caption */
+}
+
+.display-text {
+    font-size: 20px;
+    color: #444;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-top: 40px; /* Ensures more space between categories and the text */
+}
+
+
+.category-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
